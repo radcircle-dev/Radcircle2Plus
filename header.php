@@ -75,6 +75,7 @@
         <a href="https://twitter.com/Radcircle"><i class="fa fa-twitter twitter"></i></a>
         <a href="https://soundcloud.com/Radcircle"><i class="fa fa-soundcloud soundcloud"></i></a>
         <a href="https://youtube.com/user/Radcircle"><i class="fa fa-youtube youtube"></i></a>
+        <i class="fa fa-search radcircle-search-bar"></i>
           <a href="#mailing-list" class="mailing-list-header">Mailing List</a>
       </div>
       </div>
