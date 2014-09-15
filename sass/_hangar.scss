@@ -1,0 +1,324 @@
+/* PLAYLISTS PAGE */
+
+.hangar-bg {
+	background-color: #ccc;
+}
+
+
+.hangar-top-bar {
+	background-color: #ccc;
+	margin-top: 100px;
+}
+
+.hangar-time {
+	margin-bottom: 18rem;
+}
+
+	.hangar-time p:first-of-type {
+		margin-top: -10px;
+		background-color: #222;
+		color: #ccc;
+		font-family: $stdMont;
+		font-size: 1.5rem;
+		padding: 4rem 4rem 2rem 4rem;
+		text-transform: uppercase;
+		letter-spacing: 0.2rem;
+		text-align: right;
+	}
+
+	.hangar-time-divider {
+		color: #fff;
+	}
+	
+	.hangar-tag {
+		font-size: 1.5rem;
+		letter-spacing: 0.2rem;
+		padding-right: 4rem;
+		margin-top: -10px;
+		text-align: right;
+		background-color: #222;
+		color: #ccc;
+		font-family: $stdMont;
+		display: inline-block;
+		float: right;
+	}
+
+		.hangar-tag:before {
+			font-family: 'FontAwesome';
+			content: '\f02b';
+			color: #fff;
+			font-size: 1.5rem;
+			padding: 0 0.5rem 0 0.5rem;
+		}
+
+
+.hangar-hero {
+	background-color: #fff;
+	padding: 4rem;
+}
+
+.hangar-artwork {
+	background: url('../img/core-hangar.jpg') no-repeat center center fixed; 
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    background-size: cover;
+    height: 600px;
+}
+
+.hangar-details {
+	background-color: #fff;
+	padding: 0rem 0 4rem 0;
+}
+
+
+
+
+		h5.hangar-author {
+			font-family: $stdMont;
+			font-size: 3rem;
+			color: #ccc;
+			margin: 0 0 0 4rem;
+		}
+
+.hangar-body {
+	background-color: #fff;
+}
+
+	.hangar-body p {
+		font-family: $stdSerif;
+		font-size: 2.1rem;
+		color: #222;
+		line-height: 3.9rem;
+		padding: 1rem 15% 1rem 15%;
+		text-align: left;
+		@extend .smoothtext;
+	}
+
+		/* css design for links in hangar */
+		.hangar-body p a {
+			padding: 2px 5px 2px 5px;
+			background-color: #90cbe9;
+			color: inherit;
+			transition: .25s all;
+		}
+
+		.hangar-body p a:visited {
+			padding: 2px 5px 2px 5px;
+			background-color: #90cbe9;
+			color: inherit;
+			transition: .25s all;
+		}
+
+		.hangar-body p a:hover {
+			background-color: #ccc;
+			padding: 2px 5px 2px 5px;
+			transition: .25s all;
+			text-decoration: none;
+		}
+
+	.hangar-body p:first-letter {
+		color: inherit;
+		border-bottom: 5px solid #ccc;
+	}
+
+/*** WRITING TOOLS **/
+	.hangar-body iframe {
+		max-width: 80%;
+		text-align: center;
+		margin: 2% 10% 2% 10%;
+	}
+
+		/* R2+ WRITING TOOL */
+	.hangar-body img {
+		margin: 2% 10% 2% 10%;
+		max-width: 80%;
+	}	
+
+/* BLOCKQUOTES BELOW */
+	/* R2+ WRITING TOOL */
+	.hangar-body blockquote {
+		border-left: none;
+		margin: 10% 15% 10% 15%;
+		font-family: $stdLato;
+		font-weight: 100;
+		font-size: 5rem;
+		padding: 0;
+	}
+
+		/* SMALL SCREENS BLOCKQUOTE WRITING TOOL */
+
+		/* this first media query is for <767 css resolution devices [phones etc], it makes the quote size mobile ready */
+		@media (max-width: 767px) {
+		  .hangar-body blockquote {
+		  	font-size: 3rem;
+			margin: 20% 15% 20% 15%;
+		  }
+		}
+
+		.hangar-body blockquote:before {
+			content: '“';
+			font-size: 10rem;
+			font-weight: bold;
+			display: block;
+			color: #ccc;
+			text-align: left;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			margin-top: -8rem;
+			margin-bottom: -6rem;
+		}
+
+		.hangar-body blockquote:after {
+			content: '”';
+			font-size: 10rem;
+			font-weight: bold;
+			display: block;
+			color: #ccc;
+			text-align: right;
+			font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+			margin-top: -6rem;
+			margin-bottom: -8rem;
+		}
+
+/* blockquotes above */
+
+/* end of writing tools */
+///////////////////////////
+
+	.hangar-body p:first-of-type {
+		padding: 6rem 15% 1rem 15%;
+		@extend .smoothtext;
+	}
+
+	.hangar-body p:last-of-type {
+		padding: 1rem 15% 6rem 15%;
+	}
+
+@media (max-width: 767px) {
+  .hangar-body p {padding: 0.5rem 5% 0.5rem 5%}
+
+  .hangar-body p:first-of-type 	{padding: 3rem 5% 0.5rem 5%}
+  .hangar-body p:last-of-type 	{padding: 0.5rem 5% 3rem 5%}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+  .hangar-body p {
+    padding: 1rem 10% 1rem 10%;
+  }
+  }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+  .hangar-body p {
+    padding: 1rem 15% 1rem 15%;
+  }
+  }
+
+
+h5.hangar-fin {
+	padding-bottom: 2.5rem;
+	background-color: #fff;
+	color: #ccc;
+	font-family: 'Sacramento', cursive;
+	font-size: 5rem;
+	text-align: center;
+	@extend .smoothtext;
+}
+
+.underbar {
+		height: 5px;
+ 		background: #ea2e49; /* Old browsers */
+		background: -moz-linear-gradient(left,  #ea2e49 0%, #77c4d3 50%, #f6f792 100%); /* FF3.6+ */
+		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ea2e49), color-stop(50%,#77c4d3), color-stop(100%,#f6f792)); /* Chrome,Safari4+ */
+		background: -webkit-linear-gradient(left,  #ea2e49 0%,#77c4d3 50%,#f6f792 100%); /* Chrome10+,Safari5.1+ */
+		background: -o-linear-gradient(left,  #ea2e49 0%,#77c4d3 50%,#f6f792 100%); /* Opera 11.10+ */
+		background: -ms-linear-gradient(left,  #ea2e49 0%,#77c4d3 50%,#f6f792 100%); /* IE10+ */
+		background: linear-gradient(to right,  #ea2e49 0%,#77c4d3 50%,#f6f792 100%); /* W3C */
+		filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#ea2e49', endColorstr='#f6f792',GradientType=1 ); /* IE6-9 */
+}
+
+.hangar-share {
+	padding-top: 3.5rem;
+	font-family: $stdMont;
+	font-size: 2rem;
+	color: #222;
+	display: block;
+	text-transform: uppercase;
+	text-align: center;
+	padding-bottom: 0.7rem;
+	@extend .smoothtext;
+}
+
+	.hangar-share i {
+		margin: 0 1rem 0 1rem;
+		font-size: 5rem;
+		vertical-align: middle;
+		margin-bottom: 1rem;
+	}
+
+h5.hangar-share-text {
+	font-family: $stdMont;
+	font-style: 1.8rem;
+	font-size: 2.1rem;
+	color: #ccc;
+	text-align: center;
+	text-transform: uppercase;
+	padding-bottom: 2.8rem;
+}
+
+.profile-photo img {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  	filter: gray; /* IE6-9 */
+  	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  	transition: .25s all;
+}
+
+.profile-photo img:hover {
+	filter: none;
+  	-webkit-filter: grayscale(0%);
+  	transition: .25s all;
+}
+
+
+.hangar-hero h1 {
+	padding: 0;
+	margin: 0 0 0 0;
+	font-family: Helvetica 'Neue', Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 8rem;
+	color: #222;
+	letter-spacing: -0.5rem;
+	vertical-align: middle;
+	@extend .smoothtext;
+}
+
+
+/* fix h1 response */
+@media (max-width: 767px) {
+  .hangar-hero h1 {
+    font-size: 5rem;
+  }
+	/* fixes the padding on small devices */
+  .hangar-hero {
+  	padding: 2rem;
+  }
+
+	/* same as above for .hangar-hero, it aligns both to a 2rem edge */
+  h5.hangar-author {
+	margin: 0 0 0 2rem;
+   }
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+    .hangar-hero h1 {
+    	font-size: 6rem;
+    }
+  }
+
+@media (min-width: 992px) and (max-width: 1199px) {
+    .hangar-hero h1 {
+    	font-size: 7rem;
+    }
+  }
+/*********** ^^^^^ */
+

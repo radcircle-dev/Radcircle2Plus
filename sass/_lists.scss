@@ -1,0 +1,36 @@
+.manhattan {
+	background-color: #252525;
+}
+
+.playlist-details {
+	margin: 4rem 0 4rem 0;
+}
+
+.playlist-details h1 {
+	font-family: Helvetica 'Neue', Helvetica, Arial, sans-serif;
+	font-size: 8rem;
+	color: #fff;
+	letter-spacing: -0.4rem;
+	font-weight: bold;
+	text-align: center;
+}
+
+.playlist-desc {
+	padding: 4rem 0 4rem 0;
+}
+
+.playlist-desc h1 {
+	font-family: $stdLato;
+	font-weight: 900;
+	font-size: 6rem;
+	color: #fff;
+	text-align: center;
+}
+
+	.playlist-desc p {
+		font-family: $stdLato;
+		font-weight: 300;
+		color: #fff;
+		text-align: center;
+		font-size: 3rem;
+	}

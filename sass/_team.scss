@@ -1,0 +1,119 @@
+.team-introduction {
+	text-align: center;
+	padding: 0rem 0 4rem 0;
+}
+
+	.team-introduction h1 {
+		font-family: $stdMont;
+		font-size: 4.5rem;
+		font-weight: 700;
+	}
+
+	.team-introduction h2 {
+		font-family: $stdLato;
+		font-weight: 100;
+		font-size: 4rem;
+	}
+
+.containerteam a, .containerteam a:hover, .containerteam a:visited {
+	color: $hyperlink;
+}
+
+.containerteam .white {
+	font-family: $stdMont;
+	font-size: 3rem;
+	margin-bottom: 3rem;
+}
+
+.containerteam .white img {
+	float: left;
+}
+
+	.containerteam img {
+		border-radius: 50%;
+    -webkit-border-radius: 50%;
+    max-width: 100%;
+    height: auto;	
+}
+
+.team-name, .team-title, .team-learn {
+	display: inline-block;
+	text-align: left;
+	vertical-align: middle;
+	padding-left: 2rem;
+}
+
+.team-name {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	letter-spacing: -0.3rem;
+	font-weight: bold;
+	font-size: 6rem;
+	color: #222;
+	margin-left: 3rem;
+}
+
+	h1.team-name  {
+		margin-top: 2rem; margin-bottom: 1rem;	}
+
+.team-title {
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	letter-spacing: -0.2rem;
+	font-size: 4rem;
+	margin-left: 3rem;
+	color: #888;
+}
+
+	h2.team-title {
+		margin-top: 0; margin-bottom: 1rem;
+	}
+
+@media (max-width: 767px) {
+
+.team-name,
+.team-title {
+	margin-left: 0rem;
+}
+
+.team-learn {
+	margin-left: 1rem !important;
+}
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+.team-learn {
+	margin-left: 3rem;
+}
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+.team-learn {
+	margin-left: 4rem;
+}
+
+}
+
+.team-learn {
+	padding: .72rem;
+	font-family: $stdMont;
+	font-size: 1.8rem;
+	letter-spacing: 0.18rem;
+	border: 5px solid #ccc;
+	font-weight: 400;
+	margin-left: 5rem;
+	text-align: center;
+	text-transform: uppercase;
+	transition: .25s all;
+}
+
+	.team-learn:hover {
+		border-top: 5px solid #888;
+		border-right: 5px solid $hyperlink;
+		border-bottom: 5px solid $hyperlink;
+		border-left: 5px solid #888;
+		transition: .25s all;
+	}

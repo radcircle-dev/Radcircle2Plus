@@ -1,19 +1,31 @@
-@import url(http://fonts.googleapis.com/css?family=Lato:100,300,900|Montserrat:400,700);
-@import url(http://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic);
+@import url(https://fonts.googleapis.com/css?family=Lato:100,300,900|Montserrat:400,700);
+@import url(https://fonts.googleapis.com/css?family=Noto+Serif:400,700,400italic,700italic);
+@import url(http://fonts.googleapis.com/css?family=Sacramento);
 
 /* &VARIABLES */
-$stdLato: 'Lato', Helvetica 'Neue', Helvetica, Arial, sans-serif;
-$stdMont: 'Montserrat', Helvetica 'Neue', Helvetica, Arial, sans-serif;
-$stdSerif: 'Noto Serif', 'Times New Roman', serif;
+$stdLato: "Lato", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$stdMont: "Montserrat", "Helvetica Neue", Helvetica, Arial, sans-serif;
+$stdSerif: "Noto Serif", 'Times New Roman', serif;
 
 $electronic: #EA2E49;
 $strings: 	 #77C4D3;
 $hhrb: 		 #F6F792;
 
+$hyperlink:  #FF4247;
+.hyperlink 	{color: $hyperlink;}
+
+.facebook 	{color: #3b5998;}
+.twitter 	{color: #55acee;}
+.youtube 	{color: #e52d27;}
+.soundcloud {color: #f80;} 
+.tumblr 	{color: #35465c;}
+.reddit 	{color: #cee3f8;}
+.googleplus {color: #dd4b39;}
+
 
 
 .underbar {
-			height: 10px;
+		height: 5px;
 		background: #ea2e49; /* Old browsers */
 		background: -moz-linear-gradient(left,  #ea2e49 0%, #77c4d3 50%, #f6f792 100%); /* FF3.6+ */
 		background: -webkit-gradient(linear, left top, right top, color-stop(0%,#ea2e49), color-stop(50%,#77c4d3), color-stop(100%,#f6f792)); /* Chrome,Safari4+ */
@@ -34,6 +46,17 @@ $hhrb: 		 #F6F792;
 
 body {
 	font-size: 62.5% !important;
+
+}
+
+html, body {
+    height: 100%; width: 100%;
+      margin: 0; padding: 0;
+}
+
+.fill { 
+    min-height: 100%;
+    height: 100%;
 }
 
 .header {
@@ -41,7 +64,10 @@ body {
 	margin: 1rem 0 1rem 0;
 }
 
-
+.smoothtext {
+	text-rendering: optimizeLegibility;
+	-webkit-font-smoothing: antialiased
+}
 
 
 
@@ -84,7 +110,7 @@ body {
 	color: #eee;
 	background-color: transparent;
 	text-transform: uppercase;
-	font-family: 'Helvetica Neue', Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	letter-spacing: 2px;
 	font-size: 20px;
@@ -274,9 +300,22 @@ span#site-name {
 .soundcloud {color: #f80;}
 .youtube {color: #e52d27;}
 
+.logo {text-align: center;}
+.logo img {
+	padding: 2.5rem 0 0 0;
+	transition: .25s all;
+}
 
+.logo img:hover {
+	opacity: 0.5;
+	transition: .25s all;
+}
 
+.underbar-index {
+	margin-bottom: 2.5rem;
+}
 /* MAIN AREA */
+
 
 .featured-m {
 	margin-left: 0;
@@ -307,7 +346,7 @@ span#site-name {
 	.featured-m p {
 		margin: 20px 0 0 10px;
 		padding: 10px;
-		font-family: Helvetica 'Neue', Helvetica, Arial, sans-serif;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-weight: bold;
 		font-size: 3.5rem;
 		line-height: 4rem;
@@ -339,7 +378,7 @@ span#site-name {
 
 	.featured-l p {
 		padding: 40px;
-		font-family: Helvetica 'Neue', Helvetica, Arial, sans-serif;
+		font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 		font-weight: bold;
 		color: #fff;
 
@@ -370,7 +409,7 @@ span#site-name {
   font-size: 4rem;
   line-height: 5.5rem;
   letter-spacing: -0.2rem;
-  font-family: Helvetica 'Neue', Helvetica, Arial, sans-serif;
+  font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 }
 
 .bubble-span {
@@ -425,7 +464,8 @@ span#site-name {
 }
 
 .the-post-artwork {
-	background: url(inherit) no-repeat center center fixed; 
+		background: url('http://radcircle.com/wp-content/uploads/2014/07/mykrazy-500x500.jpg') no-repeat center center fixed; 
+
     -webkit-background-size: cover;
     -moz-background-size: cover;
     -o-background-size: cover;
@@ -436,13 +476,22 @@ span#site-name {
     margin-top: 8rem;
 }
 
+		/* Post Media Query */
+		@media (max-width: 767px) {
+
+		.the-post-artwork {
+			display: none;}
+		}
+		
+		/* End Post Media Query */
+
 .post-extra {
 	color: inherit;
 }
 
 /* post page title */
 .post-title {
-	font-family: Helvetica 'Neue', Helvetica, Arial, sans-serif;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
 	font-weight: bold;
 	font-size: 8rem;
 	text-align: left;
@@ -454,6 +503,20 @@ span#site-name {
 	-webkit-font-smoothing: antialiased
 }
 
+		/* Title Media Query */
+		@media (max-width: 767px) {
+
+		.post-title {
+			font-size: 5rem;
+			line-height: 5rem;
+			letter-spacing: -0.35rem;
+			padding: 0rem;
+		}
+
+		/* End Title Media Query */
+
+}
+
 .the-author {
 	font-family: $stdMont;
 	font-size: 2.5rem;
@@ -462,7 +525,7 @@ span#site-name {
 	margin-top: 1rem;
 	margin-bottom: 1rem;
 	padding: 0 0 1rem 0;
-	border-bottom: 1px solid #aaa;
+	border-bottom: 1px solid $hyperlink;
 	text-rendering: optimizeLegibility;
 	-webkit-font-smoothing: antialiased
 }
@@ -485,9 +548,9 @@ span#site-name {
 }
 
 .post p {
-font-family: $stdSerif;
+	margin: 1rem 0 1rem 0;
+	font-family: $stdSerif;
 	color: #222;
-	text-rendering: geometricPrecision;
 	font-size: 2.1rem;
 	line-height: 3.6rem;
 	font-weight: 400;
@@ -496,12 +559,74 @@ font-family: $stdSerif;
 	-webkit-font-smoothing: antialiased
 }
 
+		/* Post Media Query */
+		@media (max-width: 767px) {
+
+		.post p {
+			font-size: 1.7rem;
+			line-height: 2.9rem;}
+		}
+		
+		/* End Post Media Query */
+
 .post p:first-of-type {
 	padding-top: 1rem;
 }
 
 
 
+ul.post-categories {
+	list-style: none;
+}
+
+li.post-categories {
+	margin-top: 2.5rem;
+}
+
+.the-category {
+	margin-top: 2.5rem;
+	font-family: $stdMont;
+	text-transform: uppercase;
+	font-size: 2.5rem;
+	color: #333;
+	margin-top: 1rem;
+	margin-bottom: 1rem;
+	text-decoration: none;
+	list-style: none;
+	text-align: center;
+}
+
+.the-category a {
+	color: $hyperlink;
+}
+
+.the-category a:hover {
+	color: $hyperlink;
+}
+
+.the-tags {
+	text-align: center;
+	font-family: $stdMont;
+	text-transform: uppercase;
+	font-size: 1.5rem;
+	color: #222;
+	margin-top: 1.5rem;
+	margin-bottom: 1.5rem;
+}
+	.the-tags a {
+		color: $hyperlink;
+	}
+
+	.the-tags a:hover {
+		color: $hyperlink;
+	}
+
+	.the-tags a:before {
+		font-family: 'FontAwesome';
+		content: '\f02b';
+		color: #222;
+		padding: 0 0.5rem 0 0;
+	}
 
 /* footer */
 
@@ -535,12 +660,36 @@ font-family: $stdSerif;
 
 
 /* PUT THIS IN A PARTIAL */
+
+
+.mailing-list-anchor {
+	color: inherit;
+}
+
+.mailing-list-anchor:hover {
+	text-decoration: none;
+	color: inherit;
+}
+
+.signup-form {
+	text-align: center;
+	margin-bottom: 2.5rem;
+}
+
+h2.mce-email {
+	font-family: $stdMont;
+	font-size: 1.8rem;
+	letter-spacing: 0.18rem;
+	text-transform: uppercase;
+	line-height: 2.4rem;
+	color: #ccc;
+}
+
 #mce-EMAIL {
+	width: 50%;
 	background: transparent;
 	border: none;
-	border-bottom: 4px solid #171717;
-	width: 650px;
-	max-width: 1024px;
+	border-bottom: 2px solid #fff;
 	text-align: center;
 	font-family: $stdMont;
 	font-weight: 300;
@@ -552,13 +701,20 @@ font-family: $stdSerif;
 }
 
 	#mce-EMAIL:hover {
-		border-bottom: 4px solid #fff;
+		border-bottom: 2px solid $hyperlink;
 		transition: .4s all;
 	}
 
+/* input caution as this is the only input in this */
+input {
+	font-family: $stdMont;
+	font-size: 2.1rem;
+	padding: 5px;
+}
+
 input.button {
 	margin-top: 2rem;
-	border: 1px solid #2ecc71;
+	border: 1px solid $hyperlink;
 	background: transparent;
 	padding: 1rem;
 	font-family: $stdMont;
@@ -567,12 +723,18 @@ input.button {
 	text-transform: uppercase;
 	letter-spacing: 0.4rem;
 	transition: .4s all;
+
 }
+	input:focus {
+    outline:none;}
 
 input.button:hover {
 	border: 1px solid #fff;
 	transition: .4s all;
 }
+
+/* end input */
+
 #menu { padding:0; width:100%; background-color:#fff; display:none;
 font-size: 4rem;
 position: relative;
@@ -598,4 +760,157 @@ height: 500px; }
 	font-family: $stdMont;
 }
 
+/* Footnote Terms */
+
+span.footnote-terms  {
+	font-family: $stdMont;
+	font-size: 2rem;
+	color: #ccc;
+	vertical-align: top;
+} 
+p.footnote-terms {
+	font-family: $stdMont;
+	font-size: 1.4rem !important;
+	color: #ccc;
+	text-transform: uppercase;
+	font-weight: 400;
+	letter-spacing: 0.14rem;
+}
+
+/* Standard Page */
+
+.standard h1 {
+	font-family: $stdMont;
+	font-size: 5rem;
+	font-weight: 700;
+	text-align: center;
+	padding: 1.5rem 0 1.5rem 0;
+	border-bottom: 5px solid #ccc;
+}
+
+.standard h2 {
+	font-family: $stdMont;
+	font-size: 3rem;
+	padding: 1rem 0 1rem 0;
+}
+
+.standard p {
+	font-family: $stdSerif;
+	font-size: 2.1rem;
+	line-height: 3.9rem;
+}
+
+.standard ul li {
+	text-decoration: none;
+	list-style: none;
+}
+
+/* next and past page */
+.pagenavigation {
+	text-align: center;
+	background: #111;
+}
+
+.next-page, .past-page {
+	font-family: $stdLato;
+	font-size: 5rem;
+	font-weight: 100;
+	color: #fff;
+	background-color: #111;
+	text-align: center;
+	margin-top: 2.5rem;
+	margin-left: 2.5rem;
+	margin-right: 2.5rem;
+	margin-bottom: 2.5rem;
+	display: inline-block;
+	padding: 0.25rem;
+}
+
+.next-page a, .past-page a {
+	color: $hyperlink;
+}
+
+.next-page a:hover, .past-page a:hover {
+	color: #fff;
+	text-decoration: none;
+}
+/* end next past page */
+
+/* tags and cats */
+
+
+
+
+/* icons */
+@charset "UTF-8";
+
+/* untitled-font-2 */
+@font-face {
+  font-family: "untitled-font-2";
+  src:url("https://fontastic.s3.amazonaws.com/FxANiF2itE2Ssv9DM8NpMY/fonts/1410309706.eot");
+  src:url("https://fontastic.s3.amazonaws.com/FxANiF2itE2Ssv9DM8NpMY/fonts/1410309706.eot?#iefix") format("embedded-opentype"),
+    url("https://fontastic.s3.amazonaws.com/FxANiF2itE2Ssv9DM8NpMY/fonts/1410309706.woff") format("woff"),
+    url("https://fontastic.s3.amazonaws.com/FxANiF2itE2Ssv9DM8NpMY/fonts/1410309706.ttf") format("truetype"),
+    url("https://fontastic.s3.amazonaws.com/FxANiF2itE2Ssv9DM8NpMY/fonts/1410309706.svg#1410309706") format("svg");
+  font-weight: normal;
+  font-style: normal;
+}
+
+[data-icon]:before {
+  font-family: "untitled-font-2" !important;
+  content: attr(data-icon);
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+[class^="icon-"]:before,
+[class*=" icon-"]:before {
+  font-family: "untitled-font-2" !important;
+  font-style: normal !important;
+  font-weight: normal !important;
+  font-variant: normal !important;
+  text-transform: none !important;
+  speak: none;
+  line-height: 1;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+.icon-home-house-streamline:before {
+  content: "a";
+}
+.icon-settings-streamline:before {
+  content: "b";
+}
+.icon-music-note-streamline:before {
+  content: "c";
+}
+.icon-envellope-mail-streamline:before {
+  content: "d";
+}
+.icon-earth-globe-streamline:before {
+  content: "e";
+}
+.icon-diamond:before {
+  content: "g";
+}
+.icon-male-female:before {
+  content: "f";
+}
+
+@import 'profiles';
+@import 'hangar';
+@import 'lists';
+@import 'navigation';
+@import 'navmenu';
+@import 'global-footer';
 @import 'playlists';
+@import 'maincontent';
+@import 'team';
+

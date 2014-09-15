@@ -1,0 +1,106 @@
+/* PLAYLISTS PAGE */
+
+.profiles {
+	height: auto;
+}
+
+.profile-container {
+	color: inherit;
+}
+
+.profile-photo {
+	margin-top: 6rem;
+	padding-bottom: 3rem;
+	text-align: left;
+}
+
+.profile-photo img {
+	filter: url("data:image/svg+xml;utf8,<svg xmlns=\'http://www.w3.org/2000/svg\'><filter id=\'grayscale\'><feColorMatrix type=\'matrix\' values=\'0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0.3333 0.3333 0.3333 0 0 0 0 0 1 0\'/></filter></svg>#grayscale"); /* Firefox 3.5+ */
+  	filter: gray; /* IE6-9 */
+  	-webkit-filter: grayscale(100%); /* Chrome 19+ & Safari 6+ */
+  	transition: .25s all;
+}
+
+.profile-photo img:hover {
+	filter: none;
+  	-webkit-filter: grayscale(0%);
+  	transition: .25s all;
+}
+
+.leadership {
+	font-family: $stdMont;
+	font-size: 1.5rem;
+	color: #aaa;
+	text-transform: uppercase;
+	border: 1px solid #ffd700;
+	padding: 0.5rem;
+	opacity: 0.5;
+	margin-left: 0.5rem;
+	transition: .25s all;
+	display: none;
+}
+
+.leadership:hover {
+	opacity: 1;
+	transition: .25s all;
+}
+
+.profile-name {
+}
+
+.profile-name h1 {
+	padding: 0;
+	margin: 1rem 0 0 0;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 8rem;
+	color: #222;
+	letter-spacing: -0.4rem;
+	vertical-align: middle;
+}
+
+.profile-name h2 {
+	padding-top: 0.9rem;
+	font-family: "Helvetica Neue", Helvetica, Arial, sans-serif;
+	font-weight: bold;
+	font-size: 4rem;
+	color: #aaa;
+	margin-top: -2rem;
+	padding-top: 2rem;
+	padding-bottom: 1rem;
+	border-bottom: 5px solid #aaa;
+}
+
+.profile-description {
+	padding-top: 1rem;
+	padding-bottom: 2rem;
+}
+
+	.profile-description p {
+		font-family: $stdSerif;
+		font-size: 2.3rem;
+		line-height: 3.9rem;
+		color: #222;
+	}
+
+.profile-social {
+	border-top: 1px solid #eee;
+	margin: 0.5rem 0 2.5rem 0;
+}
+.profile-social i {
+	font-size: 5rem;
+	padding: 1rem 0.5rem 0 0.5rem;
+	vertical-align: middle;
+	color: #aaa;
+	transition: .25s all;
+}
+
+	.profile-social i:hover {
+		color: #222;
+		transition: .25s all;
+	}
+
+.profile-footer {
+	text-align: center;
+	padding: 10rem 0 5rem 0;
+}

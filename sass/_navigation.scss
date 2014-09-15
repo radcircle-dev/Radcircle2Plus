@@ -1,0 +1,179 @@
+.topleft {
+	background-color: transparent;
+	margin: 1rem 0 0 0;
+	position: absolute;
+	top: 0;
+	left: 0;
+	font-size: 1.8rem;
+	letter-spacing: .18rem;
+	font-family: $stdMont;
+	text-transform: uppercase;
+	color: #ccc;
+
+}
+	.topleft a {color: $hyperlink;}
+	.topleft a:hover {
+		color: $hyperlink;
+	}
+
+	.topleft-social-container {
+		padding: 1rem 0 0 3rem;
+	}
+
+.topleft i {
+	font-size: 3.5rem;
+	letter-spacing: 0.2rem;
+	padding: 0.5rem;
+	transition: .25s all;
+}
+
+	.topleft i:hover {
+		opacity: 0.5;
+		transition: .25s all;
+	}
+
+.mailing-list-header {
+	color: $hyperlink;
+}
+
+.mailing-list-header a, .mailing-list-header a:visited {
+	color: $hyperlink;
+}
+
+	.mailing-list-header a:hover {
+		color: #ccc !important;
+		text-decoration: none;
+	}
+
+.topright {
+	background-color: transparent;
+	margin: 1rem 0 0 0;
+	position:absolute;
+     top:0;
+     right:0;
+
+}
+
+.topright-divider {
+	color: #111;
+}
+
+.topright h5 {
+	padding: 2rem 3rem 0 0;
+	display: inline-block;
+	font-size: 1.8rem;
+	letter-spacing: .18rem;
+	font-family: $stdMont;
+	text-transform: uppercase;
+	color: #ccc;
+}
+
+	.topright h5 a {
+		color: #ccc;
+		transition: .25s all;
+	}
+
+	.topright h5 a:hover {
+		color: $hyperlink;
+		text-decoration: none;
+		transition: .25s all;
+	}
+
+.navigation {
+	background-color: transparent;
+	margin-top: 3rem;
+  text-align: center;
+
+}
+
+	.navigation a:hover {
+		text-decoration: none;
+		color: #333;
+	}
+
+.navigation h4 {
+	font-size: 2.5rem;
+	font-family: $stdMont;
+	text-transform: uppercase;
+	color: #111;
+	display: inline-block;
+	vertical-align: middle;
+	padding: 0 0 0.5rem 0;
+	margin-right: 2.5rem;
+}
+
+.navigation a {
+	color: #aaa;
+}
+
+
+
+.icon-home-house-streamline,
+.icon-earth-globe-streamline, 
+.icon-male-female, 
+.icon-music-note-streamline,
+.icon-settings-streamline, 
+.icon-diamond, {
+	font-size:4rem;
+	vertical-align: middle;
+	padding-right: 1rem;
+}
+
+
+
+@media (max-width: 767px) {
+
+
+}
+
+@media (min-width: 768px) and (max-width: 991px) {
+
+
+}
+
+
+@media (min-width: 992px) and (max-width: 1199px) {
+
+
+}
+
+
+
+	/* This class is for the | in between the icon and 'MENU' text */
+	.navigation-divider {
+		font-family: $stdLato !important;
+		font-weight: 100 !important;
+		color: #ccc !important;
+	}
+
+/* Social icons */
+.nav-social-icons {
+	font-size: 3rem !important;
+	padding: 0 0.5rem 0 0.5rem;
+}
+
+/* used as @extend for the three first links */
+.nav-standard-icons {
+	font-family: 'FontAwesome'; color: #111;
+	font-size: 1.75rem; padding: 0 0.5rem 0 0;
+}
+
+.nav-playlists:before {
+	content: '\f1de';
+	@extend .nav-standard-icons;
+}
+
+.nav-genres:before {
+	content: '\f001';
+	@extend .nav-standard-icons;
+}
+
+.nav-featured:before {
+	content: '\f06d';
+	@extend .nav-standard-icons;
+}
+
+
+
+
+
