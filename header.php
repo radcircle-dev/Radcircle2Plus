@@ -67,6 +67,12 @@
 
 
 
+<div id="global-radcircle-search-bar">
+
+	SEARCH GO 
+
+</div>
+
 <!-- first row, logo -->
 
     <div class="topleft hidden-xs">
